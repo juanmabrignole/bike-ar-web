@@ -1,0 +1,37 @@
+/*Selector Universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-left: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+}
+
+section {
+    margin-left: 40px;
+}
+
+section article {
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+}
+
+section article p{
+    font-size: 40px;
+}
+
+/*Selector de ID*/
+#bordes-header{
+    border: 5px solid black;
+}
+
+/*Selector de Clase*/
+.links-style{
+    color: red;
+}

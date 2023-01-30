@@ -5,27 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="./recursos/logo/e-bike.png" type="image/x-icon">
-    <title>BikeAr-Home</title>
+	<!--Hoja de Estilos CSS-->
+	<link rel="stylesheet" href="./css/estilos.css">
+	<title>BikeAr-Home</title>
 </head>
 
 <body>
 
 	<!--HTML Semántico-->
+	
 	<nav>
 		<!--Enlaces Absolutos-->
-		<a href="https://rodarelectric.com/" target="_blank">Rodar Electric</a>
+		<!--Selector de Clase-->
+		<a class="links-style" href="https://rodarelectric.com/" target="_blank">Rodar Electric</a>
 		<!--Enlaces Relativos-->
-		<a href="#">Inicio</a>
+		<a class="links-style" href="#">Inicio</a>
 		<!--Enlaces IMG-->
 		<a href="./paginas/promociones.html">
 			<img src="./recursos/logo/e-bike.png" alt="logo-bikear" width="150px">
 		</a>
 		<!--Enlaces Internos-->
-		<a href="#pie">Info</a>
+		<a class="links-style" class="links-estyle" href="#pie">Info</a>
 	</nav>
 
-	<header>
-		<img src="./recursos/imagenes/bici-andando.jpg" alt="foto-bici-andando" width="500px">
+	<!--Selector ID-->
+	<header id="bordes-header">
+		<img width="500" src="./recursos/imagenes/bici-andando.jpg" alt="foto-bici-andando" >
 		<img src="./recursos/imagenes/bici-montana.jpg" alt="foto-bici-montaña" width="500px">
 	</header>
 
@@ -58,12 +63,16 @@
 		<li>Hosting</li>
 	</ul>
 
+	<!--Padres e Hijos-->
+	<section>
+		<article>
+			<h2>Mundial de futbol</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At ut aliquid quia delectus autem? In asperiores possimus maiores sequi quis.</p>
+		</article>
+	</section>
+
 	
 	
-
-
-	
-
 	<footer id="pie">
 		<p>Desarrollado junto a la camada N° 39250</p>
 	</footer>

@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../recursos/logo/e-bike.png" type="image/x-icon">
+    <!--Hoja de estilos CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Bikear-Contacto</title>
 </head>
 <body>
 
     <h3>Decínos Hola!</h3>
 
-    <form action="procesar.php" method="post">
+    <form action="procesar.php" method="get">
 
         <p>
         <label for="nombre">Ingrese su nombre: </label>
@@ -23,11 +25,57 @@
         <input type="text" name="apellido" placeholder="Ingrese su apellido">
         </p>
 
+        <p>
+            <label for="email">Ingrese su correo eléctrónico: </label>
+            <input type="email" name="email" placeholder="hola@servidor.com.ar">
+        </p>
+
+        <p>
+            <label for="pass">Ingrese su contraseña: </label>
+            <input type="password" name="pass" placeholder="Ingrese su contraseña" >
+        </p>
+
+        <!--Input Radio-->
+        <h3>Elija su rodado: </h3>
+
+        <label for="rodado">12 Pulgadas</label>
+        <input type="radio" name="rodado" value="12">
+
+        <label for="rodado">16 Pulgadas</label>
+        <input type="radio" name="rodado" value="16">
+
+        <label for="rodado">20 Pulgadas</label>
+        <input type="radio" name="rodado" value="20">
+
+         <!--Input Checkbox-->
+        <h3>Elija superficie: </h3>
+
+        <label for="superficie">Tierra</label>
+        <input type="checkbox" name="superficie" value="tierra">
+
+        <label for="superficie">Ciudad</label>
+        <input type="checkbox" name="superficie" value="ciudad">
+
+        <label for="superficie">Arena</label>
+        <input type="checkbox" name="superficie" value="arena">
+
+        <!--Menú Deplegable-->
+        <h3>Elija su talle: </h3>
+        <select name="">
+            <option value="s">Small</option>
+            <option value="medium">Medium</option>
+            <option value="l">Large</option>
+        </select>
+
+        <h3>Dejanos tu comentario</h3>
+
+        <!--Textarea-->
+        <textarea name="mensaje" cols="30" rows="10"></textarea>
+
+        <p>
         <button type="submit">Enviar</button>
         <button type="reset">Borrar Formulario</button>
-
-
-
+        </p>
 
     </form>
     
