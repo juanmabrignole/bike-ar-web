@@ -1,8 +1,23 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap');
+
+/*Fuente Local*/
+@font-face {
+    font-family: "heebo-light", sans-serif;
+    src: url("../fonts/Heebo-Light.ttf");
+}
+
+@font-face {
+    font-family: "heebo-regular" , sans-serif;
+    src: url("../fonts/Heebo-Regular.ttf");
+}
+
 /*Selector Universal*/
 *{
     margin: 0;
     padding: 0;
 }
+
 
 h1 {
     margin-left: 30px;
@@ -33,14 +48,15 @@ section article p{
 
 /*Selector de Clase*/
 .links-style{
+    font-family: 'Heebo', sans-serif;
     color: red;
 }
 
 /*Selectores After Class*/
 
 h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 35px;
+    font-family: "heebo-regular", sans-serif;
+    font-size: 2rem;
     font-weight: bolder;
     color: blueviolet;
     text-align: center;
@@ -79,16 +95,65 @@ h3 {
 
 }
 
-h1, h3, p {
+/*h1, h3, p {
     font-size: 50px;
     color: rgba(red, green, blue, .5);
+}*/
+
+/*Selectores*/
+/*Selectores de Etiqueta*/
+
+
+
+/*Selector de clase*/
+.links-nosotros {
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
 }
 
-#main-nosotros{
+.fuente-links {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Selector ID*/
+#estilos-footer {
+    background-color: aqua;
+}
+
+/*Herencia*/
+p {
+    font-size: 25px;
+}
+
+p {
+    color: red;
+}
+
+
+/*Background-image*/
+.back-productos {
+    height: 900px;
     width: 100%;
-    background-image: url("../recursos/imagenes/bici-montana.jpg");
+    /*Background-image*/
+    background-image: url("../recursos/imagenes/bici-ciudad.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border: 1px solid black;
-    height: 800px;
+}
+
+/*Box-modeling*/
+.box-modeling{
+    border: 5px solid black;
+    width: 500px;
+    height: 200px;
+    padding: 20px 30px 40px 30px;
+    margin: 20px 30px;
+}
+
+.box-modeling h5{
+    font-size: 40px;
+}
+
+a {
+    display: block;
 }
