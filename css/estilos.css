@@ -157,3 +157,63 @@ p {
 a {
     display: block;
 }
+
+/*Comentario CSS*/
+/*FlexBox*/
+
+.flex-container {
+    border: 1px solid black;
+    background: #ccc;
+    padding: 10px;
+    margin: 10px;
+    height: 500px;
+
+    /*Propiedades de la caja*/
+    /*Activamos Flexbox*/
+    display: flex;
+    /*Definimos cual es el eje principal, si es una fila (row) o es una columna (column)*/
+    flex-direction: row;
+    /*Defino el desborde o salto de línea*/
+    flex-wrap: wrap;
+    /*Alineamos los elementos en el eje principal*/
+    justify-content: flex-start;
+    /*Alineamos los elementos en el eje secundario*/
+    align-items: flex-start;
+    /*Espacio entre líneas*/
+    /*align-content: space-evenly;*/
+    
+
+}
+
+.caja {
+    /*Box-modeling*/
+    width: 120px;
+    height: 120px;
+    border: 1px solid gray;
+    margin: 5px;
+
+    /*Tipografías*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-family: "heebo-light", sans-serif;
+}
+
+/*Propiedades de los flex-items*/
+.c1 {
+    background-color: lightblue;
+    /*Defino el óden de aparición*/
+    order: 3;
+}
+
+.c2{
+    background-color: lightcoral;
+    order: 1;
+    /*Derecho a crecer*/
+    flex-grow: 5;
+}
+
+.c3 {
+    background-color: lightgreen;
+    order: 2;
+}
