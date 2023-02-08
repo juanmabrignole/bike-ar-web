@@ -217,3 +217,65 @@ a {
     background-color: lightgreen;
     order: 2;
 }
+
+/*CSS GRIDS Práctica*/
+
+.grid-container{
+    /*Box-modeling*/
+    width: 90%;
+    max-width: 1000px;
+    border: 10px solid black;
+    margin: auto;
+    height: 900px;
+
+    /*Tipografia*/
+    font-size: 50px;
+    text-align: center;
+
+    /*Activar Grids*/
+    display: grid;
+    /*Definimos la cantidad de columnas y su ancho (width)*/
+    grid-template-columns: 1fr 2fr 1fr;
+     /*Definimos la cantidad de filas y su alto (height)*/
+    grid-template-rows: repeat(4,1fr);
+    /*Gutters o huecos entre columnas*/
+    column-gap: 10px;
+    /*Gutters o huecos entre filas*/
+    row-gap: 10px;
+    /*Eje horizontal
+    justify-items: start;
+    */
+    /*Eje vertical
+    align-items: center;
+    */
+    /*Muevo todos los elementos en el eje horizontal*/
+    /*justify-content: center;*/
+    /*Muevo todos los elementos en el eje Vertical*/
+    /*align-content: end;*/
+
+}
+
+/*Divs que están diréctamente dentro del grid container*/
+.grid-container > div {
+    padding: 20px;
+    color: #fff;
+    background: #2f89fc;
+} 
+
+/*Grid Áreas*/
+/*Lo vemos en la clase del lunes*/
+#grilla {
+    /*Activamos Grid*/
+    display: grid;
+    grid-template-areas:
+    "nav    header      header"
+    "nav    productos   publicidad"
+    "nav    servicios   publicidad"
+    "nav    footer      footer"
+    ;
+}
+
+.border {
+    border: 2px solid black;
+}
+
