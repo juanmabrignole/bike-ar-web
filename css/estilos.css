@@ -27,9 +27,9 @@ h1 {
     color: blue;
 }
 
-section {
+/*/section {
     margin-left: 40px;
-}
+}*/
 
 section article {
     background-color: aqua;
@@ -42,9 +42,9 @@ section article p{
 }
 
 /*Selector de ID*/
-#bordes-header{
+/*#bordes-header{
     border: 5px solid black;
-}
+}*/
 
 /*Selector de Clase*/
 .links-style{
@@ -263,19 +263,110 @@ a {
 } 
 
 /*Grid Áreas*/
-/*Lo vemos en la clase del lunes*/
 #grilla {
-    /*Activamos Grid*/
     display: grid;
-    grid-template-areas:
+    /*grid areas*/
+    grid-template-areas: 
     "nav    header      header"
     "nav    productos   publicidad"
     "nav    servicios   publicidad"
-    "nav    footer      footer"
+    "nav    pie         pie"
     ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 150px 1fr 75px;
 }
 
 .border {
-    border: 2px solid black;
+    border: 1px solid black;
 }
+
+/*Asignamos las áreas*/
+
+#banner {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    background: lightseagreen;
+}
+
+#productos {
+    grid-area: productos;
+    background: lightcoral;
+}
+
+#servicios {
+    grid-area: servicios;
+    background: lightslategray;
+}
+
+#navgrid {
+    grid-area: nav;
+    background: lightgoldenrodyellow;
+}
+
+aside {
+    grid-area: publicidad;
+    background: lightslategrey;
+}
+
+footer {
+    grid-area: pie;
+    background: lightsalmon;
+}
+
+/*REsponsive*/
+/*Por defecto*/
+main {
+    background-color: #2f89fc;
+}
+
+/*Grid Áreas, Responsive*/
+
+
+/*MediaQueries*/
+@media screen and (max-width: 479px){
+
+    /*Grid areas responsive*/
+    #grilla {
+        height: 500px;
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "productos"
+        "servicios"
+        "publicidad"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,1fr);
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 700px) {
+    
+    main {
+        background-color: lightpink;
+    }
+
+    h3 {
+        font-size: 50px;
+        font-weight: lighter;
+        font-family: "heebo-light", sans-serif;
+        color: red;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1200px){
+    main {
+        background-color: lightslategray;
+    }
+}
+
+
+
+
+
 
