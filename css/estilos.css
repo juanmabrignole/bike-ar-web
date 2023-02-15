@@ -31,11 +31,11 @@ h1 {
     margin-left: 40px;
 }*/
 
-section article {
+/*section article {
     background-color: aqua;
     width: 500px;
     height: 500px;
-}
+}*/
 
 section article p{
     font-size: 40px;
@@ -154,9 +154,9 @@ p {
     font-size: 40px;
 }
 
-a {
+/*a {
     display: block;
-}
+}*/
 
 /*Comentario CSS*/
 /*FlexBox*/
@@ -316,11 +316,181 @@ footer {
     background: lightsalmon;
 }
 
-/*REsponsive*/
+/*Responsive*/
 /*Por defecto*/
 main {
     background-color: #2f89fc;
 }
+
+/*Navbar con flexbox*/
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    font-family: "heebo-light", sans-serif;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Pseudoclases*/
+a:hover{
+    background: #f10086;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+a:active{
+    background: blueviolet;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+a:link{
+    color: red;
+}
+
+a:visited{
+    color: blue;
+}
+
+/*First and last child*/
+.grupo{
+    width: 500px;
+    margin: 20px auto;
+    background: gray;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.parrafos p:first-child {
+    background: blue;
+    color: white;
+}
+
+.parrafos p:last-child {
+    background: green;
+    color: black;
+}
+
+/*first and last type*/
+.elementos p:first-of-type{
+    background-color: #f10086;
+    color: white;
+}
+
+.elementos p:last-of-type{
+    background-color: #ca6684;
+    color: white;
+}
+
+/*.elementos div:first-of-type{
+    background-color: #00f189;
+    color: black;
+}*/
+
+.elementos div:last-of-type{
+    background-color: #cbd930;
+    color: black;
+}
+
+/*nth-child y nth-last-child*/
+/*.lista :nth-last-child(5){
+    background: lightcoral;
+    color: white;
+}*/
+
+.lista :nth-last-child(odd){
+    background: lightseagreen;
+    color: black;
+}
+
+/*BEM*/
+.contenedor{
+    max-width: 500px;
+    width: 100%;
+}
+
+.tarjeta{
+    margin: 20px;
+    width: 400px;
+    border: 5px solid black;
+    text-align: center;
+}
+
+.tarjeta__miniatura{
+    height: 500px;
+    background: red;
+}
+
+.tarjeta__imagen{
+    width: 80%;
+    padding-top: 20px;
+}
+
+.tarjeta__textos{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+    width: 100%;
+}
+
+.tarjeta__titulo{
+    font-size: 30px;
+    text-align: center;
+}
+
+.tarjeta__titulo--negrita{
+    font-weight: bold;
+}
+
+.tarjeta__enlace{
+    color: #f10086;
+    padding: 10px auto;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.tarjeta__parrafo{
+    max-width: 100%;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.boton {
+    font-size: 14px;
+    padding: 8px 35px;
+    background: #000;
+    border: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+/*Modificador*/
+.boton--alternativo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
 
 /*Grid Áreas, Responsive*/
 
