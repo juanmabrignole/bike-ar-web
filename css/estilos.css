@@ -417,6 +417,7 @@ a:visited{
 .contenedor{
     max-width: 500px;
     width: 100%;
+    margin-top: 250px;
 }
 
 .tarjeta{
@@ -484,6 +485,89 @@ a:visited{
     font-size: 20px;
     font-weight: bold;
 }
+
+/*Bici productos con CSS GRID*/
+.bike-img {
+    width: 350px;
+  }
+  
+  .grid-imagenes {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    /*activamos grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px;
+    gap: 10px;
+  }
+  
+  /*Botones prediseñados*/
+  button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    margin-top: 10px;
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+
+  /*BEM afterClass*/
+  /*Defino los estilos de mi bloque*/
+.promociones{
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/*defino los estilos de mi primer elemento del bloque promociones*/
+.promociones__imagenes{
+    width: 70%;
+}
+
+/*defino los estilos de mi segundo elemento del bloque promociones*/
+.promociones__titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.promociones__titulo--alternativo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: #ca6684;
+}
+
+
+
 
 
 
