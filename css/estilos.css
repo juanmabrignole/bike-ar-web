@@ -1,8 +1,24 @@
 @charset "UTF-8";
+/*Importación*/ /*Navbar con flexbox*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap");
+nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  font-family: "heebo-light", sans-serif;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /*Creacion de variables*/
 /*Variables Globales*/
 /*Anidacion*/
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap");
 header {
   /*Variable local*/
   background-color: green;
@@ -14,10 +30,93 @@ header nav ul {
   list-style-type: none;
 }
 header nav ul li a {
-  font-family: "heebo-regular", sans-serif;
+  font-family: "heebo-light", sans-serif;
 }
 header nav ul li a:hover {
   font-size: 20px;
+}
+
+/*Condicional IF*/
+.caja {
+  background-color: gray;
+}
+
+/*Ciclo FOR Exacto*/
+.h1 {
+  font-size: 2rem;
+}
+
+.h2 {
+  font-size: 4rem;
+}
+
+.h3 {
+  font-size: 6rem;
+}
+
+.h4 {
+  font-size: 8rem;
+}
+
+.h5 {
+  font-size: 10rem;
+}
+
+.h6 {
+  font-size: 12rem;
+}
+
+/*Bucle FOR Each recorre TODOS los elementos de la lista*/
+.color-red {
+  background-color: red;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.color-gray {
+  background-color: gray;
+}
+
+.color-brown {
+  background-color: brown;
+}
+
+/*Mapas*/
+/*Creamos nuestro mapa*/
+/*Extend*/
+.card, .logo-img, .avatar {
+  background: #fff;
+  border-radius: 4px;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.avatar, .logo-img {
+  width: 100px;
+  height: 100px;
+}
+
+/*Mixins*/
+.img {
+  border: 10px solid red;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.img-avatar {
+  border: 5px solid green;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px yellow;
 }
 
 /*Fuentes*/
@@ -39,10 +138,13 @@ header nav ul li a:hover {
 h1 {
   margin-left: 30px;
   font-family: "heebo-regular", sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
   color: blue;
-  background-color: #B6874f;
+  background-color: #2f89fc;
+  border: 4px solid green;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px blue;
 }
 
 /*/section {
@@ -314,22 +416,6 @@ main {
   background-color: #2f89fc;
 }
 
-/*Navbar con flexbox*/
-nav {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-a {
-  font-family: "heebo-light", sans-serif;
-  font-size: 20px;
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 /*Pseudoclases
 a:hover{
     background: #f10086;
@@ -599,4 +685,6 @@ button:active .button_top {
   main {
     background-color: lightslategray;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */

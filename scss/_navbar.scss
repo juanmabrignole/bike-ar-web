@@ -1,0 +1,15 @@
+/*Navbar con flexbox*/
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    font-family: "heebo-light", sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
