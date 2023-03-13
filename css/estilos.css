@@ -1,19 +1,71 @@
 @charset "UTF-8";
 /*Importación*/ /*Navbar con flexbox*/
+/*Animaciones*/
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap");
-nav {
-  margin-top: 10px;
+.navegacion {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /*Gradientes*/
+  background-image: linear-gradient(89.9deg, rgb(255, 243, 110) 16.9%, rgb(30, 204, 214) 55.1%, rgb(5, 54, 154) 90.7%);
 }
 
-a {
+.navegacion a {
   font-family: "heebo-light", sans-serif;
   font-size: 20px;
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.logo-bikear {
+  width: 75px;
+  /*Tranformaciones*/
+  animation-name: logo-bike;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-out;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+
+@keyframes logo-bike {
+  /*Ejemplo 1*/
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*estado especial*/
+.boton {
+  font-size: 14px;
+  padding: 8px 35px;
+  background: #000;
+  border: 25px;
+  text-decoration: none;
+  color: white;
+  height: 100px;
+  width: 100px;
+  transition: height 5s, width 2s;
+}
+
+.boton:hover {
+  height: 200px;
+  width: 200px;
+}
+
+/*Animate.css*/
+.promos {
+  animation-name: tada;
+  animation-duration: 2s;
+  animation-delay: 3s;
+}
+
+/*Selector Universal*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*Creacion de variables*/
@@ -129,12 +181,6 @@ header nav ul li a:hover {
   font-family: "heebo-regular", sans-serif;
   src: url("../fonts/Heebo-Regular.ttf");
 }
-/*Selector Universal*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
 h1 {
   margin-left: 30px;
   font-family: "heebo-regular", sans-serif;

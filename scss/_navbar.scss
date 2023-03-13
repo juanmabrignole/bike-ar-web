@@ -1,15 +1,86 @@
 /*Navbar con flexbox*/
-nav {
-    margin-top: 10px;
+/*Animaciones*/
+.navegacion {
     display: flex;
     justify-content: space-around;
     align-items: center;
+		/*Gradientes*/
+		// background-image: linear-gradient(to left, red, yellow, blue);
+		// background-image: radial-gradient(circle, yellow, red);
+		background-image: linear-gradient( 89.9deg,  rgba(255,243,110,1) 16.9%, rgba(30,204,214,1) 55.1%, rgba(5,54,154,1) 90.7% );
 }
 
-a {
+.navegacion a {
     font-family: "heebo-light", sans-serif;
     font-size: 20px;
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
+
+.logo-bikear{
+	width: 75px;
+	/*Tranformaciones*/
+	// transform: translateX(100px);
+	// transform: translateY(200px);
+	// transform: rotate(180deg);
+	animation-name: logo-bike;
+	animation-iteration-count: 3;//o infinite
+	animation-timing-function: ease-out;
+	animation-duration: 5s;
+	animation-delay: 2s;
+}
+
+@keyframes logo-bike {
+	/*Ejemplo 1*/
+	// 0%{
+	// 	width: 75px;
+	// }
+	// 50%{
+	// 	width: 300px;
+	// }
+	// 75%{
+	// 	width: 400px;
+	// }
+	// 100%{
+	// 	width: 500px;
+	// }
+
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+/*estado especial*/
+//  .logo-bikear:hover{
+// 	// transform: skew(20deg,50deg);
+// 	transform: scale(2,1);
+// }
+
+.boton {
+	font-size: 14px;
+	padding: 8px 35px;
+	background: #000;
+	border: 25px;
+	text-decoration: none;
+	color: white;
+	height: 100px;
+	width: 100px;
+	transition: height 5s, width 2s;// o utilizamos all
+}
+
+.boton:hover{
+	height: 200px;
+	width: 200px;
+}
+
+/*Animate.css*/
+.promos{
+	animation-name: tada;
+	animation-duration: 2s;
+	animation-delay: 3s;
+}
+

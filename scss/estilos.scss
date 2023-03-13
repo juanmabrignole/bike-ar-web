@@ -3,6 +3,14 @@
 @import "fondos";
 @import "navbar";
 
+/*Selector Universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
 /*Creacion de variables*/
 /*Variables Globales*/
 $relleno: 30px;
@@ -112,11 +120,6 @@ $estilos: (
     src: url("../fonts/Heebo-Regular.ttf");
 }
 
-/*Selector Universal*/
-*{
-    margin: 0;
-    padding: 0;
-}
 
 
 h1 {

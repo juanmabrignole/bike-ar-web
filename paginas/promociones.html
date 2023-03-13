@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../recursos/logo/e-bike.png" type="image/x-icon">
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--AOS CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Hoja de estilos css-->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Bikear-Promociones</title>
@@ -13,9 +18,9 @@
 
     <!--Navbar con flex-->
     <!--Pseudoclases-->
-    <nav>
+    <nav class="navegacion">
         <a href="../index.html">
-            <img src="../recursos/logo/e-bike.png" alt="logo-bikear" width="150px">
+            <img class="logo-bikear" src="../recursos/logo/e-bike.png" alt="logo-bikear">
         </a>
         <a href="../index.html">Inicio</a>
         <a href="../paginas/promociones.html">Promociones</a>
@@ -23,6 +28,15 @@
         <a href="../paginas/productos.html">Productos</a>
         <a href="../paginas/contacto.html">Contacto</a>
     </nav>
+
+    <button class="boton">Saber Más</button>
+
+
+    <!--Animate.css-->
+    <!-- <h4 class="promos animate__animated animate__tada">Aquí están todas las promociones</h4> -->
+    <!--AOS CSS-->
+    <h4 data-aos="fade-right">Los mejores descuentos</h4>
+
 
     <!--Pseudoclases-->
     <!--First and last child-->
@@ -75,6 +89,11 @@
     <footer id="estilos-footer">
         <p>Desarrollado junto a la camada DW 39250</p>
     </footer>
+   
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
